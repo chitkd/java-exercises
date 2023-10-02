@@ -2,7 +2,7 @@ package exercises.lab_03;
 
 import java.util.Scanner;
 
-public class Lab_03_4_Method3 {
+public class Lab_03_4_Method4 {
     public static void main(String[] args) {
         // Input an integer array
         Scanner scanner = new Scanner(System.in);
@@ -27,43 +27,25 @@ public class Lab_03_4_Method3 {
         int ctM = 0;
         int ct1 = 0;
         int ct2 = 0;
-        while (ct1 < len1 && ct2 < len2){
-            if (intArray1[ct1] < intArray2[ct2]){
-                resultArray[ctM++] = intArray1[ct1++];
-            } else{
+
+        while (ctM < resultArray.length) {
+            if (ct1 == intArray1.length) {
                 resultArray[ctM++] = intArray2[ct2++];
+            } else if (ct2 == intArray2.length) {
+                resultArray[ctM++] = intArray1[ct1++];
+            } else if (intArray1[ct1] > intArray2[ct2]) {
+                resultArray[ctM++] = intArray2[ct2++];
+            } else {
+                resultArray[ctM++] = intArray1[ct1++];
             }
         }
-
-        while (ct1 < len1){
-            resultArray[ctM++] = intArray1[ct1++];
-        }
-
-        while (ct2 < len2){
-            resultArray[ctM++] = intArray2[ct2++];
-        }
-
-
-        /* While arr1 still has values && arr2 still has values
-        if (arr1[ct1] < arr2[ct2])
-            merged[ctM] = arr1[ct1];
-            ct1++;
-         else
-            merged[ctM] = arr2[ct2];
-            ct2++;
-        ctM++;
-
-        While ct1 < arr1Len
-            Put all remaining element into merged array
-        While ct2 < arr2Len
-            Put all remaining element into merged array
-
-         */
 
         System.out.println("The array after sorted: ");
         for (int i = 0; i < resultArray.length; i++) {
             System.out.printf("%d  ", resultArray[i]);
         }
+
+
 
     }
 }
