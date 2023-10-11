@@ -2,7 +2,7 @@ package exercises.lab_03;
 
 import java.util.Scanner;
 
-public class Lab_03_4_Method4 {
+public class Lab_03_4_Phuong_Solution {
     public static void main(String[] args) {
         // Input an integer array
         Scanner scanner = new Scanner(System.in);

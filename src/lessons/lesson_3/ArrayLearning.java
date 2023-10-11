@@ -1,4 +1,4 @@
-package lesson_3;
+package lessons.lesson_3;
 
 public class ArrayLearning {
     public static void main(String[] args) {

@@ -24,7 +24,8 @@ public class Lab_03_1 {
                 oddCount++;
             }
         }
-        System.out.printf("The number of even numbers: %d\n", evenCount);
+        //System.out.printf("The number of even numbers: %d\n", evenCount);
+        System.out.println("The number of even numbers: \n" + evenCount);
         System.out.printf("The number of odd numbers: %d", oddCount);
     }
 }

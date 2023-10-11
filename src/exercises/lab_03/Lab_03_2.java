@@ -17,7 +17,7 @@ public class Lab_03_2 {
         // Finding maximum value/minimum value from an integer array
         int min = intArray[0];
         int max = intArray[0];
-        for (int i = 1; i < intArray.length; i++) {
+        for (int i = 1; i < len; i++) {
             if (intArray[i] > max) {
                 max = intArray[i];
             }

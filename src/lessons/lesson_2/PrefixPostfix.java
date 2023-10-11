@@ -1,4 +1,4 @@
-package lesson_2;
+package lessons.lesson_2;
 
 public class PrefixPostfix {
     public static void main(String[] args) {

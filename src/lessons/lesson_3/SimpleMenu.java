@@ -1,4 +1,4 @@
-package lesson_3;
+package lessons.lesson_3;
 
 import java.security.SecureRandom;
 

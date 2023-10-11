@@ -22,7 +22,7 @@ public class Lab_03_4_Method2 {
             intArray2[i] = scanner.nextInt();
         }
 
-        // Merge 2 SORTED integer array into one SORTED array
+        // Merge 2 SORTED integer array into one array
         int[] resultArray = new int[len1 + len2];
         int index = 0;
         for (int i = 0; i < intArray1.length;i++) {
