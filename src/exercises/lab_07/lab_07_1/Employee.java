@@ -2,13 +2,13 @@ package exercises.lab_07.lab_07_1;
 
 public class Employee {
     private int salary;
-    private int name;
-    private int id;
+    private String name;
+    private String id;
 
     public Employee() {
     }
 
-    public Employee(int salary, int name, int id) {
+    public Employee(int salary, String name, String id) {
         this.salary = salary;
         this.name = name;
         this.id = id;
@@ -22,19 +22,19 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 }

@@ -5,7 +5,9 @@ public class Horse extends Animal{
     private static final String DEFAULT_NAME = "Horse";
 
     public Horse() {
-        this.setSpeed(randomSpeed(MAX_SPEED));
-        this.setName(DEFAULT_NAME);
+        this.name = DEFAULT_NAME;
+        this.speed = this.randomSpeed(MAX_SPEED);
     }
+
+
 }

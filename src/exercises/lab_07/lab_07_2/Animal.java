@@ -3,8 +3,10 @@ package exercises.lab_07.lab_07_2;
 import java.security.SecureRandom;
 
 public class Animal {
-    private String name;
-    private int speed;
+
+    // Access modifier
+    protected String name;
+    protected int speed;
 
     public Animal() {
     }
@@ -30,7 +32,7 @@ public class Animal {
         this.speed = speed;
     }
 
-    public static int randomSpeed(int maxSpeed){
+    protected static int randomSpeed(int maxSpeed){
         return new SecureRandom().nextInt(maxSpeed);
     }
 }

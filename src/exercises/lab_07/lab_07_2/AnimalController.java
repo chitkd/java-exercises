@@ -3,13 +3,19 @@ package exercises.lab_07.lab_07_2;
 import java.util.List;
 
 public class AnimalController {
-    public static Animal winnerAnimal(List<Animal> animalList){
-        Animal winnerAnimal = animalList.get(0);
-        for (Animal animal : animalList) {
-            if (animal.getSpeed() > winnerAnimal.getSpeed()){
-                winnerAnimal = animal;
+    public static Animal getWinnerAnimal(List<Animal> animalList) {
+        // TODO: what if animalList is null or empty
+        if (animalList.size() > 0) {
+            Animal winnerAnimal = animalList.get(0);
+            for (Animal animal : animalList) {
+                if (animal.getSpeed() > winnerAnimal.getSpeed()) {
+                    winnerAnimal = animal;
+                }
             }
+            return winnerAnimal;
         }
-        return winnerAnimal;
+        else {
+            throw new IllegalArgumentException("The animal list can't be empty");
+        }
     }
 }
