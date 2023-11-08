@@ -6,7 +6,7 @@ import java.util.*;
 public class AnimalController {
 
     public static String guessWinnerAnnimalGame(){
-        int guessTimes = 3 + new SecureRandom().nextInt(2);
+        int guessTimes = 10 + new SecureRandom().nextInt(2);
         return getWinnerAnimalTypeAfterSomeTimes(guessTimes);
     }
 
@@ -14,7 +14,7 @@ public class AnimalController {
 
         List<AnimalWithBuilder> winnerList = new ArrayList();
         while (times > 0){
-            System.out.println("----Lan " + times);
+            System.out.println("----TIME: " + times);
             AnimalWithBuilder horse1 = new Horse(new AnimalWithBuilder.Builder().setName("horse1"));
             AnimalWithBuilder horse2 = new Horse(new AnimalWithBuilder.Builder().setName("horse2"));
 
